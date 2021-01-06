@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kafka | 皮特王同学</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="天地人和，君子勿劳">
+    <link rel="preload" href="/assets/css/0.styles.34d67128.css" as="style"><link rel="preload" href="/assets/js/app.e05bc23e.js" as="script"><link rel="preload" href="/assets/js/2.51b70fa5.js" as="script"><link rel="preload" href="/assets/js/97.027ac229.js" as="script"><link rel="prefetch" href="/assets/js/10.a291ac75.js"><link rel="prefetch" href="/assets/js/100.3f0b7e36.js"><link rel="prefetch" href="/assets/js/101.c552d83a.js"><link rel="prefetch" href="/assets/js/102.b1c598a5.js"><link rel="prefetch" href="/assets/js/103.67aab20f.js"><link rel="prefetch" href="/assets/js/104.3472aa41.js"><link rel="prefetch" href="/assets/js/105.6959c54c.js"><link rel="prefetch" href="/assets/js/106.fb444e78.js"><link rel="prefetch" href="/assets/js/107.87876473.js"><link rel="prefetch" href="/assets/js/108.abeaad37.js"><link rel="prefetch" href="/assets/js/109.0f43212e.js"><link rel="prefetch" href="/assets/js/11.ddd7df59.js"><link rel="prefetch" href="/assets/js/110.a38bc3b0.js"><link rel="prefetch" href="/assets/js/111.000d2f2c.js"><link rel="prefetch" href="/assets/js/112.a27b0fec.js"><link rel="prefetch" href="/assets/js/113.33ae7ec3.js"><link rel="prefetch" href="/assets/js/114.591c3385.js"><link rel="prefetch" href="/assets/js/115.e4b5b088.js"><link rel="prefetch" href="/assets/js/116.63de2dd9.js"><link rel="prefetch" href="/assets/js/117.a9263b6e.js"><link rel="prefetch" href="/assets/js/118.cf6b3f12.js"><link rel="prefetch" href="/assets/js/119.2dc6854f.js"><link rel="prefetch" href="/assets/js/12.adc30b49.js"><link rel="prefetch" href="/assets/js/120.8734806e.js"><link rel="prefetch" href="/assets/js/121.7e9074e9.js"><link rel="prefetch" href="/assets/js/122.aa67bf3c.js"><link rel="prefetch" href="/assets/js/123.835000e0.js"><link rel="prefetch" href="/assets/js/124.468daa60.js"><link rel="prefetch" href="/assets/js/125.306d2d3a.js"><link rel="prefetch" href="/assets/js/126.8990b2d6.js"><link rel="prefetch" href="/assets/js/127.c381d669.js"><link rel="prefetch" href="/assets/js/128.e9a1088d.js"><link rel="prefetch" href="/assets/js/129.831b0e0c.js"><link rel="prefetch" href="/assets/js/13.aa136e26.js"><link rel="prefetch" href="/assets/js/130.128c5abf.js"><link rel="prefetch" href="/assets/js/131.40f6c2fb.js"><link rel="prefetch" href="/assets/js/132.167541de.js"><link rel="prefetch" href="/assets/js/133.e710902d.js"><link rel="prefetch" href="/assets/js/134.14707526.js"><link rel="prefetch" href="/assets/js/135.6ae1f98d.js"><link rel="prefetch" href="/assets/js/136.23353f6c.js"><link rel="prefetch" href="/assets/js/137.aad045a1.js"><link rel="prefetch" href="/assets/js/138.f00462e7.js"><link rel="prefetch" href="/assets/js/139.de28d444.js"><link rel="prefetch" href="/assets/js/14.55678347.js"><link rel="prefetch" href="/assets/js/140.ac1f7548.js"><link rel="prefetch" href="/assets/js/141.fb374f13.js"><link rel="prefetch" href="/assets/js/142.69484330.js"><link rel="prefetch" href="/assets/js/143.a89ca634.js"><link rel="prefetch" href="/assets/js/144.5b2e0803.js"><link rel="prefetch" href="/assets/js/145.d6465ef4.js"><link rel="prefetch" href="/assets/js/146.4956e0e8.js"><link rel="prefetch" href="/assets/js/147.c89d80f1.js"><link rel="prefetch" href="/assets/js/148.fbd308b9.js"><link rel="prefetch" href="/assets/js/149.7a66df43.js"><link rel="prefetch" href="/assets/js/15.d2312d89.js"><link rel="prefetch" href="/assets/js/150.b8277a8f.js"><link rel="prefetch" href="/assets/js/151.1305dbce.js"><link rel="prefetch" href="/assets/js/152.5cee1b51.js"><link rel="prefetch" href="/assets/js/153.0cf44746.js"><link rel="prefetch" href="/assets/js/154.76814d77.js"><link rel="prefetch" href="/assets/js/155.3b850575.js"><link rel="prefetch" href="/assets/js/156.99bb4565.js"><link rel="prefetch" href="/assets/js/157.75b8e49d.js"><link rel="prefetch" href="/assets/js/158.3071802f.js"><link rel="prefetch" href="/assets/js/159.65ac9129.js"><link rel="prefetch" href="/assets/js/16.7c6b01e4.js"><link rel="prefetch" href="/assets/js/160.32f525f5.js"><link rel="prefetch" href="/assets/js/161.31408b77.js"><link rel="prefetch" href="/assets/js/162.c379ad9f.js"><link rel="prefetch" href="/assets/js/163.ca8fc2ac.js"><link rel="prefetch" href="/assets/js/164.d5086a69.js"><link rel="prefetch" href="/assets/js/165.ba4cf62f.js"><link rel="prefetch" href="/assets/js/166.2748532d.js"><link rel="prefetch" href="/assets/js/167.a8622f4f.js"><link rel="prefetch" href="/assets/js/168.863f3550.js"><link rel="prefetch" href="/assets/js/169.b21db599.js"><link rel="prefetch" href="/assets/js/17.5dbf606c.js"><link rel="prefetch" href="/assets/js/170.24d27a0f.js"><link rel="prefetch" href="/assets/js/171.a45aff0c.js"><link rel="prefetch" href="/assets/js/172.3d826549.js"><link rel="prefetch" href="/assets/js/173.beb1cebc.js"><link rel="prefetch" href="/assets/js/174.4c130aa4.js"><link rel="prefetch" href="/assets/js/175.b70cc99d.js"><link rel="prefetch" href="/assets/js/176.98277d2d.js"><link rel="prefetch" href="/assets/js/177.ff8f6d49.js"><link rel="prefetch" href="/assets/js/178.ededc6a7.js"><link rel="prefetch" href="/assets/js/179.81de9b3b.js"><link rel="prefetch" href="/assets/js/18.1f2854ee.js"><link rel="prefetch" href="/assets/js/180.a02655bd.js"><link rel="prefetch" href="/assets/js/181.69086d25.js"><link rel="prefetch" href="/assets/js/182.dd1ebbea.js"><link rel="prefetch" href="/assets/js/183.a198cd0b.js"><link rel="prefetch" href="/assets/js/184.22ff80fb.js"><link rel="prefetch" href="/assets/js/185.2235b970.js"><link rel="prefetch" href="/assets/js/186.9eb8de24.js"><link rel="prefetch" href="/assets/js/187.92b4a6e6.js"><link rel="prefetch" href="/assets/js/188.6abba854.js"><link rel="prefetch" href="/assets/js/189.e3aeac02.js"><link rel="prefetch" href="/assets/js/19.d1cf506c.js"><link rel="prefetch" href="/assets/js/190.31786de1.js"><link rel="prefetch" href="/assets/js/191.66902c13.js"><link rel="prefetch" href="/assets/js/192.f2307c88.js"><link rel="prefetch" href="/assets/js/193.dae15dd8.js"><link rel="prefetch" href="/assets/js/194.a238f917.js"><link rel="prefetch" href="/assets/js/195.30123e03.js"><link rel="prefetch" href="/assets/js/196.6809df3e.js"><link rel="prefetch" href="/assets/js/197.55b74690.js"><link rel="prefetch" href="/assets/js/198.1a3be374.js"><link rel="prefetch" href="/assets/js/199.dce58f83.js"><link rel="prefetch" href="/assets/js/20.4211a5df.js"><link rel="prefetch" href="/assets/js/200.e9b16681.js"><link rel="prefetch" href="/assets/js/201.456d4fbb.js"><link rel="prefetch" href="/assets/js/202.f290c489.js"><link rel="prefetch" href="/assets/js/203.28f2da99.js"><link rel="prefetch" href="/assets/js/204.109fecbf.js"><link rel="prefetch" href="/assets/js/205.9866bbeb.js"><link rel="prefetch" href="/assets/js/206.a7619cd4.js"><link rel="prefetch" href="/assets/js/207.e24bd90d.js"><link rel="prefetch" href="/assets/js/208.3a8cced8.js"><link rel="prefetch" href="/assets/js/209.b13ea7ec.js"><link rel="prefetch" href="/assets/js/21.190028ab.js"><link rel="prefetch" href="/assets/js/210.9061000b.js"><link rel="prefetch" href="/assets/js/211.581374b1.js"><link rel="prefetch" href="/assets/js/212.e405df9a.js"><link rel="prefetch" href="/assets/js/213.8d1638f3.js"><link rel="prefetch" href="/assets/js/214.7a0d49ce.js"><link rel="prefetch" href="/assets/js/215.26cfee8e.js"><link rel="prefetch" href="/assets/js/216.2584a7c2.js"><link rel="prefetch" href="/assets/js/217.277b18e1.js"><link rel="prefetch" href="/assets/js/218.9c0f470e.js"><link rel="prefetch" href="/assets/js/219.25273bc7.js"><link rel="prefetch" href="/assets/js/22.fb1b0473.js"><link rel="prefetch" href="/assets/js/220.6189c1cb.js"><link rel="prefetch" href="/assets/js/23.73513adf.js"><link rel="prefetch" href="/assets/js/24.22423bef.js"><link rel="prefetch" href="/assets/js/25.1624d77f.js"><link rel="prefetch" href="/assets/js/26.fbecf61b.js"><link rel="prefetch" href="/assets/js/27.71438bd0.js"><link rel="prefetch" href="/assets/js/28.9b52b033.js"><link rel="prefetch" href="/assets/js/29.a5aa6c09.js"><link rel="prefetch" href="/assets/js/3.227509d0.js"><link rel="prefetch" href="/assets/js/30.eabda9fc.js"><link rel="prefetch" href="/assets/js/31.b689d35b.js"><link rel="prefetch" href="/assets/js/32.3fdb3ad7.js"><link rel="prefetch" href="/assets/js/33.c581b042.js"><link rel="prefetch" href="/assets/js/34.402c94bb.js"><link rel="prefetch" href="/assets/js/35.af5037ee.js"><link rel="prefetch" href="/assets/js/36.ac956534.js"><link rel="prefetch" href="/assets/js/37.c5fb7157.js"><link rel="prefetch" href="/assets/js/38.e42189e8.js"><link rel="prefetch" href="/assets/js/39.3dde39af.js"><link rel="prefetch" href="/assets/js/4.7d5f245c.js"><link rel="prefetch" href="/assets/js/40.29a3045d.js"><link rel="prefetch" href="/assets/js/41.f6a6194d.js"><link rel="prefetch" href="/assets/js/42.da145eba.js"><link rel="prefetch" href="/assets/js/43.c77a7906.js"><link rel="prefetch" href="/assets/js/44.44568ce2.js"><link rel="prefetch" href="/assets/js/45.6641e68b.js"><link rel="prefetch" href="/assets/js/46.96d83f3f.js"><link rel="prefetch" href="/assets/js/47.66e66eb8.js"><link rel="prefetch" href="/assets/js/48.01a78376.js"><link rel="prefetch" href="/assets/js/49.4da04a07.js"><link rel="prefetch" href="/assets/js/5.f8be39f3.js"><link rel="prefetch" href="/assets/js/50.62e056b3.js"><link rel="prefetch" href="/assets/js/51.dd1cb69e.js"><link rel="prefetch" href="/assets/js/52.de981fa3.js"><link rel="prefetch" href="/assets/js/53.a4127fe6.js"><link rel="prefetch" href="/assets/js/54.4dc5ce6c.js"><link rel="prefetch" href="/assets/js/55.890b89ab.js"><link rel="prefetch" href="/assets/js/56.f31f55aa.js"><link rel="prefetch" href="/assets/js/57.5e4f5929.js"><link rel="prefetch" href="/assets/js/58.d76fb107.js"><link rel="prefetch" href="/assets/js/59.e4b27a40.js"><link rel="prefetch" href="/assets/js/6.401f62eb.js"><link rel="prefetch" href="/assets/js/60.0663c25e.js"><link rel="prefetch" href="/assets/js/61.2be6b600.js"><link rel="prefetch" href="/assets/js/62.fd24c33c.js"><link rel="prefetch" href="/assets/js/63.5d470386.js"><link rel="prefetch" href="/assets/js/64.01a030ca.js"><link rel="prefetch" href="/assets/js/65.a9f1381e.js"><link rel="prefetch" href="/assets/js/66.d9965c86.js"><link rel="prefetch" href="/assets/js/67.f139d451.js"><link rel="prefetch" href="/assets/js/68.b4eae763.js"><link rel="prefetch" href="/assets/js/69.5149a751.js"><link rel="prefetch" href="/assets/js/7.86e79151.js"><link rel="prefetch" href="/assets/js/70.933f722c.js"><link rel="prefetch" href="/assets/js/71.af30b45e.js"><link rel="prefetch" href="/assets/js/72.8ca9c66b.js"><link rel="prefetch" href="/assets/js/73.706861db.js"><link rel="prefetch" href="/assets/js/74.a03093e5.js"><link rel="prefetch" href="/assets/js/75.6c17d1f3.js"><link rel="prefetch" href="/assets/js/76.1d08f572.js"><link rel="prefetch" href="/assets/js/77.59898456.js"><link rel="prefetch" href="/assets/js/78.a17bf8db.js"><link rel="prefetch" href="/assets/js/79.cbec9dfa.js"><link rel="prefetch" href="/assets/js/8.793d4e97.js"><link rel="prefetch" href="/assets/js/80.364f7c18.js"><link rel="prefetch" href="/assets/js/81.3a874eba.js"><link rel="prefetch" href="/assets/js/82.d0fbb46d.js"><link rel="prefetch" href="/assets/js/83.adf964a1.js"><link rel="prefetch" href="/assets/js/84.f5af074d.js"><link rel="prefetch" href="/assets/js/85.592791aa.js"><link rel="prefetch" href="/assets/js/86.a45d7c22.js"><link rel="prefetch" href="/assets/js/87.46f6ed7b.js"><link rel="prefetch" href="/assets/js/88.dcde7c0e.js"><link rel="prefetch" href="/assets/js/89.98c5fe9a.js"><link rel="prefetch" href="/assets/js/9.d47de9d0.js"><link rel="prefetch" href="/assets/js/90.fd382b7c.js"><link rel="prefetch" href="/assets/js/91.0cf35e41.js"><link rel="prefetch" href="/assets/js/92.613c11a5.js"><link rel="prefetch" href="/assets/js/93.221f7cc9.js"><link rel="prefetch" href="/assets/js/94.cb87dceb.js"><link rel="prefetch" href="/assets/js/95.22dd3a57.js"><link rel="prefetch" href="/assets/js/96.5662debe.js"><link rel="prefetch" href="/assets/js/98.27f52102.js"><link rel="prefetch" href="/assets/js/99.ed1573b3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.34d67128.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">皮特王同学</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/VueRouter/" class="nav-link">
+  VueRouter
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/小程序/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/浏览器/" class="nav-link">
+  浏览器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/Django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/backend/JAVA/" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MongoDB/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MyBatis/" class="nav-link">
+  MyBatis
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/PostgreSQL/" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/backend/SpringBoot/" class="nav-link">
+  SpringBoot
+</a></li><li class="dropdown-item"><!----> <a href="/backend/大数据/" class="nav-link">
+  大数据
+</a></li><li class="dropdown-item"><!----> <a href="/backend/操作系统/" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/backend/数据分析/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/backend/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/backend/架构设计/" class="nav-link">
+  架构设计
+</a></li><li class="dropdown-item"><!----> <a href="/backend/正则表达式/" class="nav-link">
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/backend/深度学习/" class="nav-link">
+  深度学习
+</a></li><li class="dropdown-item"><!----> <a href="/backend/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/backend/编译原理/" class="nav-link">
+  编译原理
+</a></li><li class="dropdown-item"><!----> <a href="/backend/网络爬虫/" class="nav-link">
+  网络爬虫
+</a></li><li class="dropdown-item"><!----> <a href="/backend/计算机组成原理/" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-item"><!----> <a href="/backend/计算机网络/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/backend/运维/" class="nav-link">
+  运维
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="效率" class="dropdown-title"><span class="title">效率</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/efficiency/BUG/" class="nav-link">
+  BUG
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/NPM/" class="nav-link">
+  NPM
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/VSCode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/代码片段/" class="nav-link">
+  代码片段
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/工作流/" class="nav-link">
+  工作流
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/工具优化/" class="nav-link">
+  工具优化
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/flower/" class="nav-link">
+  flower
+</a></li><li class="dropdown-item"><!----> <a href="/project/仿知乎-Django/" class="nav-link">
+  仿知乎-Django
+</a></li></ul></div></div> <a href="https://github.com/PeterWangYong/techBook" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/VueRouter/" class="nav-link">
+  VueRouter
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/小程序/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/浏览器/" class="nav-link">
+  浏览器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/Django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/backend/JAVA/" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MongoDB/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MyBatis/" class="nav-link">
+  MyBatis
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/PostgreSQL/" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/backend/SpringBoot/" class="nav-link">
+  SpringBoot
+</a></li><li class="dropdown-item"><!----> <a href="/backend/大数据/" class="nav-link">
+  大数据
+</a></li><li class="dropdown-item"><!----> <a href="/backend/操作系统/" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/backend/数据分析/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/backend/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/backend/架构设计/" class="nav-link">
+  架构设计
+</a></li><li class="dropdown-item"><!----> <a href="/backend/正则表达式/" class="nav-link">
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/backend/深度学习/" class="nav-link">
+  深度学习
+</a></li><li class="dropdown-item"><!----> <a href="/backend/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/backend/编译原理/" class="nav-link">
+  编译原理
+</a></li><li class="dropdown-item"><!----> <a href="/backend/网络爬虫/" class="nav-link">
+  网络爬虫
+</a></li><li class="dropdown-item"><!----> <a href="/backend/计算机组成原理/" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-item"><!----> <a href="/backend/计算机网络/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/backend/运维/" class="nav-link">
+  运维
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="效率" class="dropdown-title"><span class="title">效率</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/efficiency/BUG/" class="nav-link">
+  BUG
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/NPM/" class="nav-link">
+  NPM
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/VSCode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/代码片段/" class="nav-link">
+  代码片段
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/工作流/" class="nav-link">
+  工作流
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/工具优化/" class="nav-link">
+  工具优化
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/flower/" class="nav-link">
+  flower
+</a></li><li class="dropdown-item"><!----> <a href="/project/仿知乎-Django/" class="nav-link">
+  仿知乎-Django
+</a></li></ul></div></div> <a href="https://github.com/PeterWangYong/techBook" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/backend/%E5%A4%A7%E6%95%B0%E6%8D%AE/" aria-current="page" class="sidebar-link">大数据</a></li><li><a href="/backend/大数据/kafka.html" class="active sidebar-link">Kafka</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/大数据/kafka.html#介绍" class="sidebar-link">介绍</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/大数据/kafka.html#消息系统" class="sidebar-link">消息系统</a></li><li class="sidebar-sub-header"><a href="/backend/大数据/kafka.html#数据存储" class="sidebar-link">数据存储</a></li><li class="sidebar-sub-header"><a href="/backend/大数据/kafka.html#流处理平台" class="sidebar-link">流处理平台</a></li></ul></li><li class="sidebar-sub-header"><a href="/backend/大数据/kafka.html#使用-kafka" class="sidebar-link">使用 Kafka</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/大数据/kafka.html#启动服务" class="sidebar-link">启动服务</a></li><li class="sidebar-sub-header"><a href="/backend/大数据/kafka.html#控制台客户端" class="sidebar-link">控制台客户端</a></li></ul></li></ul></li><li><a href="/backend/大数据/opentsdb.html" class="sidebar-link">OpenTSDB</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="kafka"><a href="#kafka" class="header-anchor">#</a> Kafka</h1> <p>如果要入门大数据，kafka 算是一个很好的入口。kafka 作为数据管道和存储设施在大数据系统中无所不在，本文基于官方文档对 kafka 进行一次学习和梳理。</p> <h2 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h2> <h3 id="消息系统"><a href="#消息系统" class="header-anchor">#</a> 消息系统</h3> <p>Kafka 是一个消息系统，它是分布式的，大吞吐量的消息系统。</p> <h4 id="整合了点对点和发布订阅两种模式"><a href="#整合了点对点和发布订阅两种模式" class="header-anchor">#</a> 整合了点对点和发布订阅两种模式</h4> <p>传统的消息系统如 ActiveMQ 通常具备两种模式：点对点模式和发布订阅模式。点对点模式的特点是：消息只能被一个消费者所消费，这种模式下可以通过增加消费者实现负载均衡；发布订阅模式的特点是：消息可以同时让多个消费者消费，这种模式下可以实现批量分发，但无法实现负载均衡。</p> <p>传统消息系统的结构：Producer -&gt; Broker -&gt; Consumer。这种结构只能同时实现点对点或发布订阅两种模式中的一种。那么是否有办法可以同时实现两种模式呢？</p> <p>Kafka 通过在结构上增加了一层 ConsumerGroup 同时实现了两种模式：Producer -&gt; Broker -&gt; ConsumerGroup -&gt; Consumer。Broker 对于 Group 是发布订阅模式，不同的 Group 可以独立重复消费 Kafka 中的数据，但 Group 对于 Consumer 是点对点模式，每一个 Consumer 只能排他性地消费属于自己的数据。</p> <h4 id="如何实现分布式"><a href="#如何实现分布式" class="header-anchor">#</a> 如何实现分布式</h4> <p>Kafka 是分布式的消息系统，这保证了 Kafka 具备大吞吐，高容错的特性。分布式的本质是将计算和数据分散到不同的机器上进行处理，首先说一下数据部分，也就是消息。分布式的数据管理往往离不开两个东西：分片和副本，分片是为了负载均衡，副本是为了高可用，高容错，同时副本之间还会存在主从关系。</p> <p>Kafka 自然也不例外，Kafka 将一个 Topic 分为多个 partition(分区)，每一个 partition 都有自己的一个或多个副本(replica)，具体多少取决于副本因子(replication-factor)。partition 的副本分散在集群的多台机器上同时其中一个副本是 leader，其他的副本是 follower，leader 负责消息的读写，follower 负责从 leader 同步数据，这些副本分布和主从关系全部存储在 zookeeper 上。</p> <h4 id="消息的无序和有序"><a href="#消息的无序和有序" class="header-anchor">#</a> 消息的无序和有序</h4> <p>有了 partition 和副本，一个 topic 上的读写任务就被分配到不同的 leader-partition 上，即不同的机器上，但与此同时生产者发送消息到 topic 也需要分别写入不同的 partition，因而整体上 topic 里面的消息是无序的，因为分散在不同 partition 上的消息无法保证顺序，但每一个 partition 中的消息是有序的，所以如果想要保证 Topic 消息有序，那么该 Topic 只能存在一个 partition。</p> <p>默认情况下 Topic 使用轮询的方式将消息分发到不同的 partition 上，当然用户也可以指定按照某种 hash 方式分发消息到 partition 上。每一条消息进入 partition 时被打上一个编号：offset，同时消息内容顺序写入数据文件：commit-log，partition 中写入的消息既不可修改也不可回退。于是，生产者发送到 Topic 的消息就被分散到整个集群中等待消费者消费。</p> <h4 id="如何消费消息"><a href="#如何消费消息" class="header-anchor">#</a> 如何消费消息</h4> <p>如同前文所说，Kafka 的消息消费需要通过 ConsumerGroup 和 Consumer 两个部分，Group 负责从 Topic 中接收消息并按照 Consumer 的数量以 Partition 为单位进行分配，Group 还会监控 Consumer 的状态，一旦某个 Consumer 挂掉了，Group 会剔除该 Consumer 并将他的 partition 分配给其他的 Consumer 进行消费。</p> <p>Kafka 中 ConsumerGroup 是一个有状态的对象，每一个 partition 会在 zookeeper 中维护不同 Group 上次消费到的 offset 便于下次继续消费，类似于/consumers/group/offsets/topic/partition。如果我们在消费时没有指定 Group 则使用默认的 Group，所以如果要保证消费的完整性就要保证每次使用相同的 Group。至于 Group 中的 Consumer 则是无状态的对象，或多或少或增或减都不会影响消息的消费顺序。</p> <h3 id="数据存储"><a href="#数据存储" class="header-anchor">#</a> 数据存储</h3> <p>不同于 ActiveMQ，Kafka 中的消息会在过期(retention-period)之前会一直保留，不会随着消费而删除。因而对于 Kafka 中的消息我们可以多次重复消费，这就让 Kafka 成为了很好的数据存储设施。同时由于分布式的设计，Kafka 的数据存储量可以不断横向扩容。</p> <h3 id="流处理平台"><a href="#流处理平台" class="header-anchor">#</a> 流处理平台</h3> <p>Kafka 不满足于只作为数据管道和存储设施，还提供了一系列用于流处理的接口，便于开发者实时处理管道中的数据，这个功能可以玩一下，但不如 SparkStreaming，Storm，Flink 等专业流处理系统全面。</p> <h2 id="使用-kafka"><a href="#使用-kafka" class="header-anchor">#</a> 使用 Kafka</h2> <h3 id="启动服务"><a href="#启动服务" class="header-anchor">#</a> 启动服务</h3> <h4 id="启动-zookeeper"><a href="#启动-zookeeper" class="header-anchor">#</a> 启动 Zookeeper</h4> <p>Kafka 作为分布式系统依赖 zk 保存状态数据，kafka 自带了 zookeeper</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> kafka_2.12-2.5.0
+<span class="token function">nohup</span> ./bin/zookeeper-server-start.sh config/zookeeper.properties <span class="token operator">&amp;&gt;</span> /dev/null <span class="token operator">&amp;</span>
+</code></pre></div><h4 id="启动单个-kafka"><a href="#启动单个-kafka" class="header-anchor">#</a> 启动单个 Kafka</h4> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> kafka_2.12-2.5.0
+<span class="token function">nohup</span> ./bin/kafka-server-start.sh config/server.properties <span class="token operator">&amp;&gt;</span> /dev/null <span class="token operator">&amp;</span>
+</code></pre></div><h4 id="启动-kafka-集群"><a href="#启动-kafka-集群" class="header-anchor">#</a> 启动 Kafka 集群</h4> <p>Kafka 集群是通过 ZK 构建的，所以启动集群即启动多个 Kafka 实例，这些实例的配置中 zk 地址相同。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> kafka_2.12-2.5.0
+<span class="token function">cp</span> config/server.properties config/server-1.properties
+<span class="token function">cp</span> config/server.properties config/server-2.properties
+</code></pre></div><div class="language-properties extra-class"><pre class="language-properties"><code><span class="token attr-name">vim</span> <span class="token attr-value">config/server-1.properties</span>
+<span class="token attr-name">	broker.id</span><span class="token punctuation">=</span><span class="token attr-value">1</span>
+<span class="token attr-name">	listeners</span><span class="token punctuation">=</span><span class="token attr-value">PLAINTEXT://:9093</span>
+<span class="token attr-name">	log.dirs</span><span class="token punctuation">=</span><span class="token attr-value">/tmp/kafka-logs-1</span>
+
+<span class="token attr-name">vim</span> <span class="token attr-value">config/server-2.properties</span>
+<span class="token attr-name">	broker.id</span><span class="token punctuation">=</span><span class="token attr-value">2</span>
+<span class="token attr-name">	listeners</span><span class="token punctuation">=</span><span class="token attr-value">PLAINTEXT://:9094</span>
+<span class="token attr-name">	log.dirs</span><span class="token punctuation">=</span><span class="token attr-value">/tmp/kafka-logs-2</span>
+</code></pre></div><p>broker.id 保证在集群中唯一，log.dirs 为消息数据存储路径</p> <h3 id="控制台客户端"><a href="#控制台客户端" class="header-anchor">#</a> 控制台客户端</h3> <h4 id="管理脚本"><a href="#管理脚本" class="header-anchor">#</a> 管理脚本</h4> <ul><li><p>列出集群中所有的 topic</p> <div class="language- extra-class"><pre class="language-text"><code>./bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+</code></pre></div></li> <li><p>创建一个 topic</p> <div class="language- extra-class"><pre class="language-text"><code>./bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1 --topic test1
+</code></pre></div></li> <li><p>查看 topic 详情</p> <div class="language- extra-class"><pre class="language-text"><code>./bin/kafka-topics.sh --describe --bootstrap-server localhost:9092 --topic test1
+	Topic: test1	PartitionCount: 1	ReplicationFactor: 1	Configs: segment.bytes=1073741824
+	Topic: test1	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
+</code></pre></div><p>Topic 详情中第一行是 Topic 的总体信息：Topic，partition 数量，副本数量，segment.bytes: commit-log 的单文件最大存储量</p> <p>第二行以后为每一个 partition 的详情：Topic，Partition 编号，当前 Leader-Partition 编号，所有副本 partition 编号，保持同步状态的副本 partition 数量(ISR: in-sync)</p> <blockquote><p>通常如果文件很大，我们就需要将其拆分为多个小文件。kafka 中一个 partition 中的数据对应一个 commit-log 目录，目录中存在多个 segment 文件将消息数据分隔存储。</p></blockquote></li></ul> <h4 id="生产者消费者"><a href="#生产者消费者" class="header-anchor">#</a> 生产者消费者</h4> <div class="language-sh extra-class"><pre class="language-sh"><code>./bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic test1
+./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test1 --from-beginning
+<span class="token comment"># 默认consumer从latest位置开始消费，添加--from-beginning开始消费</span>
+./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test1 --group <span class="token number">1</span>
+<span class="token comment"># 可以给消费者指定一个group，这样同一个group下的consumer可以从上次消费的offset位置继续消费</span>
+<span class="token comment"># 如果不指定group则会分配一个默认的group，每次默认从partition的末端开始消费</span>
+</code></pre></div><h4 id="连接器"><a href="#连接器" class="header-anchor">#</a> 连接器</h4> <p>连接器的作用在于连接上游数据源将数据写入 kafka，连接下游数据源将 kafka 中的数据写入进去。</p> <p>不同类型的数据源对应存在不同的 connector，我们需要根据数据源类型选择相应的 connector。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">echo</span> -e <span class="token string">&quot;hello<span class="token entity" title="\n">\n</span>world&quot;</span> <span class="token operator">&gt;&gt;</span> test.txt
+./bin/connect-standalone.sh config/connect-standalone.properties config/connect-file-source.properties config/connect-file-sink.properties
+<span class="token comment"># 三份配置文件：</span>
+<span class="token comment"># 第一份对应connect，connect是一个接口用于调用connector，里面指定了kafka地址以及如何序列化</span>
+<span class="token comment"># 第二份对应source connector，用于配置文件名，topic名称，以及使用的Connector Class类型</span>
+<span class="token comment"># 第三份对应output connector，用于配置文件名，topic名称，以及使用的Connector Class类型</span>
+<span class="token comment"># 结果：本地出现文件：test.sink.txt， topic：connect-test中存在写入的数据</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">1/6/2021, 2:30:36 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/backend/%E5%A4%A7%E6%95%B0%E6%8D%AE/" class="prev router-link-active">
+        大数据
+      </a></span> <span class="next"><a href="/backend/大数据/opentsdb.html">
+        OpenTSDB
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e05bc23e.js" defer></script><script src="/assets/js/2.51b70fa5.js" defer></script><script src="/assets/js/97.027ac229.js" defer></script>
+  </body>
+</html>

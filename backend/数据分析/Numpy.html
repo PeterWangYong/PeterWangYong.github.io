@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Numpy | 皮特王同学</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="天地人和，君子勿劳">
+    <link rel="preload" href="/assets/css/0.styles.34d67128.css" as="style"><link rel="preload" href="/assets/js/app.e05bc23e.js" as="script"><link rel="preload" href="/assets/js/2.51b70fa5.js" as="script"><link rel="preload" href="/assets/js/101.c552d83a.js" as="script"><link rel="prefetch" href="/assets/js/10.a291ac75.js"><link rel="prefetch" href="/assets/js/100.3f0b7e36.js"><link rel="prefetch" href="/assets/js/102.b1c598a5.js"><link rel="prefetch" href="/assets/js/103.67aab20f.js"><link rel="prefetch" href="/assets/js/104.3472aa41.js"><link rel="prefetch" href="/assets/js/105.6959c54c.js"><link rel="prefetch" href="/assets/js/106.fb444e78.js"><link rel="prefetch" href="/assets/js/107.87876473.js"><link rel="prefetch" href="/assets/js/108.abeaad37.js"><link rel="prefetch" href="/assets/js/109.0f43212e.js"><link rel="prefetch" href="/assets/js/11.ddd7df59.js"><link rel="prefetch" href="/assets/js/110.a38bc3b0.js"><link rel="prefetch" href="/assets/js/111.000d2f2c.js"><link rel="prefetch" href="/assets/js/112.a27b0fec.js"><link rel="prefetch" href="/assets/js/113.33ae7ec3.js"><link rel="prefetch" href="/assets/js/114.591c3385.js"><link rel="prefetch" href="/assets/js/115.e4b5b088.js"><link rel="prefetch" href="/assets/js/116.63de2dd9.js"><link rel="prefetch" href="/assets/js/117.a9263b6e.js"><link rel="prefetch" href="/assets/js/118.cf6b3f12.js"><link rel="prefetch" href="/assets/js/119.2dc6854f.js"><link rel="prefetch" href="/assets/js/12.adc30b49.js"><link rel="prefetch" href="/assets/js/120.8734806e.js"><link rel="prefetch" href="/assets/js/121.7e9074e9.js"><link rel="prefetch" href="/assets/js/122.aa67bf3c.js"><link rel="prefetch" href="/assets/js/123.835000e0.js"><link rel="prefetch" href="/assets/js/124.468daa60.js"><link rel="prefetch" href="/assets/js/125.306d2d3a.js"><link rel="prefetch" href="/assets/js/126.8990b2d6.js"><link rel="prefetch" href="/assets/js/127.c381d669.js"><link rel="prefetch" href="/assets/js/128.e9a1088d.js"><link rel="prefetch" href="/assets/js/129.831b0e0c.js"><link rel="prefetch" href="/assets/js/13.aa136e26.js"><link rel="prefetch" href="/assets/js/130.128c5abf.js"><link rel="prefetch" href="/assets/js/131.40f6c2fb.js"><link rel="prefetch" href="/assets/js/132.167541de.js"><link rel="prefetch" href="/assets/js/133.e710902d.js"><link rel="prefetch" href="/assets/js/134.14707526.js"><link rel="prefetch" href="/assets/js/135.6ae1f98d.js"><link rel="prefetch" href="/assets/js/136.23353f6c.js"><link rel="prefetch" href="/assets/js/137.aad045a1.js"><link rel="prefetch" href="/assets/js/138.f00462e7.js"><link rel="prefetch" href="/assets/js/139.de28d444.js"><link rel="prefetch" href="/assets/js/14.55678347.js"><link rel="prefetch" href="/assets/js/140.ac1f7548.js"><link rel="prefetch" href="/assets/js/141.fb374f13.js"><link rel="prefetch" href="/assets/js/142.69484330.js"><link rel="prefetch" href="/assets/js/143.a89ca634.js"><link rel="prefetch" href="/assets/js/144.5b2e0803.js"><link rel="prefetch" href="/assets/js/145.d6465ef4.js"><link rel="prefetch" href="/assets/js/146.4956e0e8.js"><link rel="prefetch" href="/assets/js/147.c89d80f1.js"><link rel="prefetch" href="/assets/js/148.fbd308b9.js"><link rel="prefetch" href="/assets/js/149.7a66df43.js"><link rel="prefetch" href="/assets/js/15.d2312d89.js"><link rel="prefetch" href="/assets/js/150.b8277a8f.js"><link rel="prefetch" href="/assets/js/151.1305dbce.js"><link rel="prefetch" href="/assets/js/152.5cee1b51.js"><link rel="prefetch" href="/assets/js/153.0cf44746.js"><link rel="prefetch" href="/assets/js/154.76814d77.js"><link rel="prefetch" href="/assets/js/155.3b850575.js"><link rel="prefetch" href="/assets/js/156.99bb4565.js"><link rel="prefetch" href="/assets/js/157.75b8e49d.js"><link rel="prefetch" href="/assets/js/158.3071802f.js"><link rel="prefetch" href="/assets/js/159.65ac9129.js"><link rel="prefetch" href="/assets/js/16.7c6b01e4.js"><link rel="prefetch" href="/assets/js/160.32f525f5.js"><link rel="prefetch" href="/assets/js/161.31408b77.js"><link rel="prefetch" href="/assets/js/162.c379ad9f.js"><link rel="prefetch" href="/assets/js/163.ca8fc2ac.js"><link rel="prefetch" href="/assets/js/164.d5086a69.js"><link rel="prefetch" href="/assets/js/165.ba4cf62f.js"><link rel="prefetch" href="/assets/js/166.2748532d.js"><link rel="prefetch" href="/assets/js/167.a8622f4f.js"><link rel="prefetch" href="/assets/js/168.863f3550.js"><link rel="prefetch" href="/assets/js/169.b21db599.js"><link rel="prefetch" href="/assets/js/17.5dbf606c.js"><link rel="prefetch" href="/assets/js/170.24d27a0f.js"><link rel="prefetch" href="/assets/js/171.a45aff0c.js"><link rel="prefetch" href="/assets/js/172.3d826549.js"><link rel="prefetch" href="/assets/js/173.beb1cebc.js"><link rel="prefetch" href="/assets/js/174.4c130aa4.js"><link rel="prefetch" href="/assets/js/175.b70cc99d.js"><link rel="prefetch" href="/assets/js/176.98277d2d.js"><link rel="prefetch" href="/assets/js/177.ff8f6d49.js"><link rel="prefetch" href="/assets/js/178.ededc6a7.js"><link rel="prefetch" href="/assets/js/179.81de9b3b.js"><link rel="prefetch" href="/assets/js/18.1f2854ee.js"><link rel="prefetch" href="/assets/js/180.a02655bd.js"><link rel="prefetch" href="/assets/js/181.69086d25.js"><link rel="prefetch" href="/assets/js/182.dd1ebbea.js"><link rel="prefetch" href="/assets/js/183.a198cd0b.js"><link rel="prefetch" href="/assets/js/184.22ff80fb.js"><link rel="prefetch" href="/assets/js/185.2235b970.js"><link rel="prefetch" href="/assets/js/186.9eb8de24.js"><link rel="prefetch" href="/assets/js/187.92b4a6e6.js"><link rel="prefetch" href="/assets/js/188.6abba854.js"><link rel="prefetch" href="/assets/js/189.e3aeac02.js"><link rel="prefetch" href="/assets/js/19.d1cf506c.js"><link rel="prefetch" href="/assets/js/190.31786de1.js"><link rel="prefetch" href="/assets/js/191.66902c13.js"><link rel="prefetch" href="/assets/js/192.f2307c88.js"><link rel="prefetch" href="/assets/js/193.dae15dd8.js"><link rel="prefetch" href="/assets/js/194.a238f917.js"><link rel="prefetch" href="/assets/js/195.30123e03.js"><link rel="prefetch" href="/assets/js/196.6809df3e.js"><link rel="prefetch" href="/assets/js/197.55b74690.js"><link rel="prefetch" href="/assets/js/198.1a3be374.js"><link rel="prefetch" href="/assets/js/199.dce58f83.js"><link rel="prefetch" href="/assets/js/20.4211a5df.js"><link rel="prefetch" href="/assets/js/200.e9b16681.js"><link rel="prefetch" href="/assets/js/201.456d4fbb.js"><link rel="prefetch" href="/assets/js/202.f290c489.js"><link rel="prefetch" href="/assets/js/203.28f2da99.js"><link rel="prefetch" href="/assets/js/204.109fecbf.js"><link rel="prefetch" href="/assets/js/205.9866bbeb.js"><link rel="prefetch" href="/assets/js/206.a7619cd4.js"><link rel="prefetch" href="/assets/js/207.e24bd90d.js"><link rel="prefetch" href="/assets/js/208.3a8cced8.js"><link rel="prefetch" href="/assets/js/209.b13ea7ec.js"><link rel="prefetch" href="/assets/js/21.190028ab.js"><link rel="prefetch" href="/assets/js/210.9061000b.js"><link rel="prefetch" href="/assets/js/211.581374b1.js"><link rel="prefetch" href="/assets/js/212.e405df9a.js"><link rel="prefetch" href="/assets/js/213.8d1638f3.js"><link rel="prefetch" href="/assets/js/214.7a0d49ce.js"><link rel="prefetch" href="/assets/js/215.26cfee8e.js"><link rel="prefetch" href="/assets/js/216.2584a7c2.js"><link rel="prefetch" href="/assets/js/217.277b18e1.js"><link rel="prefetch" href="/assets/js/218.9c0f470e.js"><link rel="prefetch" href="/assets/js/219.25273bc7.js"><link rel="prefetch" href="/assets/js/22.fb1b0473.js"><link rel="prefetch" href="/assets/js/220.6189c1cb.js"><link rel="prefetch" href="/assets/js/23.73513adf.js"><link rel="prefetch" href="/assets/js/24.22423bef.js"><link rel="prefetch" href="/assets/js/25.1624d77f.js"><link rel="prefetch" href="/assets/js/26.fbecf61b.js"><link rel="prefetch" href="/assets/js/27.71438bd0.js"><link rel="prefetch" href="/assets/js/28.9b52b033.js"><link rel="prefetch" href="/assets/js/29.a5aa6c09.js"><link rel="prefetch" href="/assets/js/3.227509d0.js"><link rel="prefetch" href="/assets/js/30.eabda9fc.js"><link rel="prefetch" href="/assets/js/31.b689d35b.js"><link rel="prefetch" href="/assets/js/32.3fdb3ad7.js"><link rel="prefetch" href="/assets/js/33.c581b042.js"><link rel="prefetch" href="/assets/js/34.402c94bb.js"><link rel="prefetch" href="/assets/js/35.af5037ee.js"><link rel="prefetch" href="/assets/js/36.ac956534.js"><link rel="prefetch" href="/assets/js/37.c5fb7157.js"><link rel="prefetch" href="/assets/js/38.e42189e8.js"><link rel="prefetch" href="/assets/js/39.3dde39af.js"><link rel="prefetch" href="/assets/js/4.7d5f245c.js"><link rel="prefetch" href="/assets/js/40.29a3045d.js"><link rel="prefetch" href="/assets/js/41.f6a6194d.js"><link rel="prefetch" href="/assets/js/42.da145eba.js"><link rel="prefetch" href="/assets/js/43.c77a7906.js"><link rel="prefetch" href="/assets/js/44.44568ce2.js"><link rel="prefetch" href="/assets/js/45.6641e68b.js"><link rel="prefetch" href="/assets/js/46.96d83f3f.js"><link rel="prefetch" href="/assets/js/47.66e66eb8.js"><link rel="prefetch" href="/assets/js/48.01a78376.js"><link rel="prefetch" href="/assets/js/49.4da04a07.js"><link rel="prefetch" href="/assets/js/5.f8be39f3.js"><link rel="prefetch" href="/assets/js/50.62e056b3.js"><link rel="prefetch" href="/assets/js/51.dd1cb69e.js"><link rel="prefetch" href="/assets/js/52.de981fa3.js"><link rel="prefetch" href="/assets/js/53.a4127fe6.js"><link rel="prefetch" href="/assets/js/54.4dc5ce6c.js"><link rel="prefetch" href="/assets/js/55.890b89ab.js"><link rel="prefetch" href="/assets/js/56.f31f55aa.js"><link rel="prefetch" href="/assets/js/57.5e4f5929.js"><link rel="prefetch" href="/assets/js/58.d76fb107.js"><link rel="prefetch" href="/assets/js/59.e4b27a40.js"><link rel="prefetch" href="/assets/js/6.401f62eb.js"><link rel="prefetch" href="/assets/js/60.0663c25e.js"><link rel="prefetch" href="/assets/js/61.2be6b600.js"><link rel="prefetch" href="/assets/js/62.fd24c33c.js"><link rel="prefetch" href="/assets/js/63.5d470386.js"><link rel="prefetch" href="/assets/js/64.01a030ca.js"><link rel="prefetch" href="/assets/js/65.a9f1381e.js"><link rel="prefetch" href="/assets/js/66.d9965c86.js"><link rel="prefetch" href="/assets/js/67.f139d451.js"><link rel="prefetch" href="/assets/js/68.b4eae763.js"><link rel="prefetch" href="/assets/js/69.5149a751.js"><link rel="prefetch" href="/assets/js/7.86e79151.js"><link rel="prefetch" href="/assets/js/70.933f722c.js"><link rel="prefetch" href="/assets/js/71.af30b45e.js"><link rel="prefetch" href="/assets/js/72.8ca9c66b.js"><link rel="prefetch" href="/assets/js/73.706861db.js"><link rel="prefetch" href="/assets/js/74.a03093e5.js"><link rel="prefetch" href="/assets/js/75.6c17d1f3.js"><link rel="prefetch" href="/assets/js/76.1d08f572.js"><link rel="prefetch" href="/assets/js/77.59898456.js"><link rel="prefetch" href="/assets/js/78.a17bf8db.js"><link rel="prefetch" href="/assets/js/79.cbec9dfa.js"><link rel="prefetch" href="/assets/js/8.793d4e97.js"><link rel="prefetch" href="/assets/js/80.364f7c18.js"><link rel="prefetch" href="/assets/js/81.3a874eba.js"><link rel="prefetch" href="/assets/js/82.d0fbb46d.js"><link rel="prefetch" href="/assets/js/83.adf964a1.js"><link rel="prefetch" href="/assets/js/84.f5af074d.js"><link rel="prefetch" href="/assets/js/85.592791aa.js"><link rel="prefetch" href="/assets/js/86.a45d7c22.js"><link rel="prefetch" href="/assets/js/87.46f6ed7b.js"><link rel="prefetch" href="/assets/js/88.dcde7c0e.js"><link rel="prefetch" href="/assets/js/89.98c5fe9a.js"><link rel="prefetch" href="/assets/js/9.d47de9d0.js"><link rel="prefetch" href="/assets/js/90.fd382b7c.js"><link rel="prefetch" href="/assets/js/91.0cf35e41.js"><link rel="prefetch" href="/assets/js/92.613c11a5.js"><link rel="prefetch" href="/assets/js/93.221f7cc9.js"><link rel="prefetch" href="/assets/js/94.cb87dceb.js"><link rel="prefetch" href="/assets/js/95.22dd3a57.js"><link rel="prefetch" href="/assets/js/96.5662debe.js"><link rel="prefetch" href="/assets/js/97.027ac229.js"><link rel="prefetch" href="/assets/js/98.27f52102.js"><link rel="prefetch" href="/assets/js/99.ed1573b3.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.34d67128.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">皮特王同学</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/VueRouter/" class="nav-link">
+  VueRouter
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/小程序/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/浏览器/" class="nav-link">
+  浏览器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/Django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/backend/JAVA/" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MongoDB/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MyBatis/" class="nav-link">
+  MyBatis
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/PostgreSQL/" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/backend/SpringBoot/" class="nav-link">
+  SpringBoot
+</a></li><li class="dropdown-item"><!----> <a href="/backend/大数据/" class="nav-link">
+  大数据
+</a></li><li class="dropdown-item"><!----> <a href="/backend/操作系统/" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/backend/数据分析/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/backend/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/backend/架构设计/" class="nav-link">
+  架构设计
+</a></li><li class="dropdown-item"><!----> <a href="/backend/正则表达式/" class="nav-link">
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/backend/深度学习/" class="nav-link">
+  深度学习
+</a></li><li class="dropdown-item"><!----> <a href="/backend/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/backend/编译原理/" class="nav-link">
+  编译原理
+</a></li><li class="dropdown-item"><!----> <a href="/backend/网络爬虫/" class="nav-link">
+  网络爬虫
+</a></li><li class="dropdown-item"><!----> <a href="/backend/计算机组成原理/" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-item"><!----> <a href="/backend/计算机网络/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/backend/运维/" class="nav-link">
+  运维
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="效率" class="dropdown-title"><span class="title">效率</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/efficiency/BUG/" class="nav-link">
+  BUG
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/NPM/" class="nav-link">
+  NPM
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/VSCode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/代码片段/" class="nav-link">
+  代码片段
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/工作流/" class="nav-link">
+  工作流
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/工具优化/" class="nav-link">
+  工具优化
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/flower/" class="nav-link">
+  flower
+</a></li><li class="dropdown-item"><!----> <a href="/project/仿知乎-Django/" class="nav-link">
+  仿知乎-Django
+</a></li></ul></div></div> <a href="https://github.com/PeterWangYong/techBook" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend/CSS/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/HTML/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/JavaScript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/TypeScript/" class="nav-link">
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/VueRouter/" class="nav-link">
+  VueRouter
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/小程序/" class="nav-link">
+  小程序
+</a></li><li class="dropdown-item"><!----> <a href="/frontend/浏览器/" class="nav-link">
+  浏览器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/backend/Django/" class="nav-link">
+  Django
+</a></li><li class="dropdown-item"><!----> <a href="/backend/JAVA/" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Linux/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MongoDB/" class="nav-link">
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MyBatis/" class="nav-link">
+  MyBatis
+</a></li><li class="dropdown-item"><!----> <a href="/backend/MySQL/" class="nav-link">
+  MySQL
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Nginx/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Node/" class="nav-link">
+  Node
+</a></li><li class="dropdown-item"><!----> <a href="/backend/PostgreSQL/" class="nav-link">
+  PostgreSQL
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Python/" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/backend/Redis/" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/backend/SpringBoot/" class="nav-link">
+  SpringBoot
+</a></li><li class="dropdown-item"><!----> <a href="/backend/大数据/" class="nav-link">
+  大数据
+</a></li><li class="dropdown-item"><!----> <a href="/backend/操作系统/" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/backend/数据分析/" class="nav-link">
+  数据分析
+</a></li><li class="dropdown-item"><!----> <a href="/backend/数据结构/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/backend/架构设计/" class="nav-link">
+  架构设计
+</a></li><li class="dropdown-item"><!----> <a href="/backend/正则表达式/" class="nav-link">
+  正则表达式
+</a></li><li class="dropdown-item"><!----> <a href="/backend/深度学习/" class="nav-link">
+  深度学习
+</a></li><li class="dropdown-item"><!----> <a href="/backend/算法/" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/backend/编译原理/" class="nav-link">
+  编译原理
+</a></li><li class="dropdown-item"><!----> <a href="/backend/网络爬虫/" class="nav-link">
+  网络爬虫
+</a></li><li class="dropdown-item"><!----> <a href="/backend/计算机组成原理/" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-item"><!----> <a href="/backend/计算机网络/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/backend/运维/" class="nav-link">
+  运维
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="效率" class="dropdown-title"><span class="title">效率</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/efficiency/BUG/" class="nav-link">
+  BUG
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/Docker/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/Git/" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/NPM/" class="nav-link">
+  NPM
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/VSCode/" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/代码片段/" class="nav-link">
+  代码片段
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/工作流/" class="nav-link">
+  工作流
+</a></li><li class="dropdown-item"><!----> <a href="/efficiency/工具优化/" class="nav-link">
+  工具优化
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目" class="dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/flower/" class="nav-link">
+  flower
+</a></li><li class="dropdown-item"><!----> <a href="/project/仿知乎-Django/" class="nav-link">
+  仿知乎-Django
+</a></li></ul></div></div> <a href="https://github.com/PeterWangYong/techBook" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/backend/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" aria-current="page" class="sidebar-link">数据分析</a></li><li><a href="/backend/数据分析/Numpy.html" class="active sidebar-link">Numpy</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/数据分析/Numpy.html#数组" class="sidebar-link">数组</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/backend/数据分析/Numpy.html#ndarray对象" class="sidebar-link">ndarray对象</a></li><li class="sidebar-sub-header"><a href="/backend/数据分析/Numpy.html#ufunc-运算" class="sidebar-link">ufunc 运算</a></li><li class="sidebar-sub-header"><a href="/backend/数据分析/Numpy.html#排序" class="sidebar-link">排序</a></li></ul></li></ul></li><li><a href="/backend/数据分析/Pandas.html" class="sidebar-link">Pandas</a></li><li><a href="/backend/数据分析/数据采集.html" class="sidebar-link">数据采集</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="numpy"><a href="#numpy" class="header-anchor">#</a> Numpy</h1> <p>Numpy不仅是 Python 中使用最多的第三方库，而且还是 SciPy、Pandas 等数据科学的基础库。它所提供的数据结构比 Python 自身的“更高级、更高效”，可以这么说，NumPy 所提供的数据结构是 Python 数据分析的基础。</p> <h2 id="数组"><a href="#数组" class="header-anchor">#</a> 数组</h2> <p>为什么要用 NumPy 数组结构而不是 Python 本身的列表 list？这是因为列表 list 的元素在系统内存中是分散存储的，而 NumPy 数组存储在一个均匀连续的内存块中。这样数组计算遍历所有的元素，不像列表 list 还需要对内存地址进行查找，从而节省了计算资源。</p> <h3 id="ndarray对象"><a href="#ndarray对象" class="header-anchor">#</a> ndarray对象</h3> <p>ndarray 实际上是多维数组的含义。在 NumPy 数组中，<strong>维数称为秩（rank）</strong>，一维数组的秩为 1，二维数组的秩为 2，以此类推。在 NumPy 中，每一个线性的数组称为一个轴（axes），其实秩就是描述轴的数量。</p> <h4 id="创建数组"><a href="#创建数组" class="header-anchor">#</a> 创建数组</h4> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+a <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+b <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+b<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">10</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span>shape<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">.</span>shape<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span>dtype<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+
+<span class="token comment"># 通过函数 shape 属性获得数组的大小，通过 dtype 获得元素的属性</span>
+
+<span class="token triple-quoted-string string">&quot;&quot;&quot;
+(3,)
+(3, 3)
+int64
+[[ 1  2  3]
+ [ 4 10  6]
+ [ 7  8  9]]
+&quot;&quot;&quot;</span>
+</code></pre></div><h4 id="结构数组"><a href="#结构数组" class="header-anchor">#</a> 结构数组</h4> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+persontype <span class="token operator">=</span> np<span class="token punctuation">.</span>dtype<span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token string">'names'</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">,</span> <span class="token string">'age'</span><span class="token punctuation">,</span> <span class="token string">'chinese'</span><span class="token punctuation">,</span> <span class="token string">'math'</span><span class="token punctuation">,</span> <span class="token string">'english'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'formats'</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token string">'S32'</span><span class="token punctuation">,</span><span class="token string">'i'</span><span class="token punctuation">,</span> <span class="token string">'i'</span><span class="token punctuation">,</span> <span class="token string">'i'</span><span class="token punctuation">,</span> <span class="token string">'f'</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+peoples <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token string">&quot;ZhangFei&quot;</span><span class="token punctuation">,</span><span class="token number">32</span><span class="token punctuation">,</span><span class="token number">75</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">90</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token string">&quot;GuanYu&quot;</span><span class="token punctuation">,</span><span class="token number">24</span><span class="token punctuation">,</span><span class="token number">85</span><span class="token punctuation">,</span><span class="token number">96</span><span class="token punctuation">,</span><span class="token number">88.5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+       <span class="token punctuation">(</span><span class="token string">&quot;ZhaoYun&quot;</span><span class="token punctuation">,</span><span class="token number">28</span><span class="token punctuation">,</span><span class="token number">85</span><span class="token punctuation">,</span><span class="token number">92</span><span class="token punctuation">,</span><span class="token number">96.5</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token string">&quot;HuangZhong&quot;</span><span class="token punctuation">,</span><span class="token number">29</span><span class="token punctuation">,</span><span class="token number">65</span><span class="token punctuation">,</span><span class="token number">85</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    dtype<span class="token operator">=</span>persontype<span class="token punctuation">)</span>
+ages <span class="token operator">=</span> peoples<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span>
+chineses <span class="token operator">=</span> peoples<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'chinese'</span><span class="token punctuation">]</span>
+maths <span class="token operator">=</span> peoples<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'math'</span><span class="token punctuation">]</span>
+englishs <span class="token operator">=</span> peoples<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'english'</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>ages<span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>chineses<span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>maths<span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>englishs<span class="token punctuation">)</span>
+
+<span class="token triple-quoted-string string">&quot;&quot;&quot;
+28.25
+77.5
+93.25
+93.75
+&quot;&quot;&quot;</span>
+</code></pre></div><p>首先在 NumPy 中是用 dtype 定义的结构类型，然后在定义数组的时候，用 array 中指定了结构数组的类型 dtype=persontype，这样你就可以自由地使用自定义的 persontype 了。比如想知道每个人的语文成绩，就可以用 chineses = peoples[:][‘chinese’]，当然 NumPy 中还有一些自带的数学运算，比如计算平均值使用 np.mean。</p> <h3 id="ufunc-运算"><a href="#ufunc-运算" class="header-anchor">#</a> ufunc 运算</h3> <p>ufunc 是 universal function 的缩写，是不是听起来就感觉功能非常强大？确如其名，它能对数组中每个元素进行函数操作。NumPy 中很多 ufunc 函数计算速度非常快，因为都是采用 C 语言实现的。</p> <h4 id="连续数组"><a href="#连续数组" class="header-anchor">#</a> 连续数组</h4> <div class="language-python extra-class"><pre class="language-python"><code>x1 <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">11</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token comment"># 初始值 终值 步长</span>
+x2 <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token comment"># 初始值 终值 元素个数</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>x1<span class="token punctuation">,</span> x2<span class="token punctuation">)</span>
+
+<span class="token comment"># [1 3 5 7 9] [1. 3. 5. 7. 9.]</span>
+</code></pre></div><h4 id="算数运算"><a href="#算数运算" class="header-anchor">#</a> 算数运算</h4> <p>通过 NumPy 可以自由地创建等差数组，同时也可以进行加、减、乘、除、求 n 次方和取余数。</p> <div class="language-python extra-class"><pre class="language-python"><code>x1 <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">11</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>
+x2 <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>add<span class="token punctuation">(</span>x1<span class="token punctuation">,</span> x2<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>subtract<span class="token punctuation">(</span>x1<span class="token punctuation">,</span> x2<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>multiply<span class="token punctuation">(</span>x1<span class="token punctuation">,</span> x2<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>divide<span class="token punctuation">(</span>x1<span class="token punctuation">,</span> x2<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>power<span class="token punctuation">(</span>x1<span class="token punctuation">,</span> x2<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>remainder<span class="token punctuation">(</span>x1<span class="token punctuation">,</span> x2<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># 同np.mod(x1, x2)</span>
+</code></pre></div><h4 id="统计函数"><a href="#统计函数" class="header-anchor">#</a> 统计函数</h4> <h5 id="最大值、最小值"><a href="#最大值、最小值" class="header-anchor">#</a> 最大值、最小值</h5> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+a <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>amin<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>amin<span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>amin<span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>amax<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>amax<span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>amax<span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+</code></pre></div><p>amin() 用于计算数组中的元素沿指定轴的最小值。对于一个二维数组 a，amin(a) 指的是数组中全部元素的最小值，amin(a,0) 是延着 axis=0 轴的最小值，axis=0 轴是把元素看成了[1,4,7], [2,5,8], [3,6,9]三个元素（<strong>按列查询</strong>），所以最小值为[1,2,3]，amin(a,1) 是延着 axis=1 轴的最小值，axis=1 轴是把元素看成了[1,2,3], [4,5,6], [7,8,9]三个元素（<strong>按行查询</strong>），所以最小值为[1,4,7]。同理 amax() 是计算数组中元素沿指定轴的最大值。</p> <h5 id="最大值与最小值之差"><a href="#最大值与最小值之差" class="header-anchor">#</a> 最大值与最小值之差</h5> <div class="language-python extra-class"><pre class="language-python"><code>a <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>ptp<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>ptp<span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>ptp<span class="token punctuation">(</span>a<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+</code></pre></div><h5 id="百分位数"><a href="#百分位数" class="header-anchor">#</a> 百分位数</h5> <div class="language-python extra-class"><pre class="language-python"><code>a <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>percentile<span class="token punctuation">(</span>a<span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>percentile<span class="token punctuation">(</span>a<span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>percentile<span class="token punctuation">(</span>a<span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+</code></pre></div><p>percentile() 代表着第 p 个百分位数，这里 p 的取值范围是 0-100，如果 p=0，那么就是求最小值，如果 p=50 就是求平均值，如果 p=100 就是求最大值。同样你也可以求得在 axis=0 和 axis=1 两个轴上的 p% 的百分位数。</p> <h5 id="中位数、平均数"><a href="#中位数、平均数" class="header-anchor">#</a> 中位数、平均数</h5> <div class="language-python extra-class"><pre class="language-python"><code>
+a <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment">#求中位数</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>median<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>median<span class="token punctuation">(</span>a<span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>median<span class="token punctuation">(</span>a<span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+<span class="token comment">#求平均数</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>a<span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>a<span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+</code></pre></div><h5 id="加权平均值"><a href="#加权平均值" class="header-anchor">#</a> 加权平均值</h5> <div class="language-python extra-class"><pre class="language-python"><code>a <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+wts <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>average<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>average<span class="token punctuation">(</span>a<span class="token punctuation">,</span>weights<span class="token operator">=</span>wts<span class="token punctuation">)</span>
+</code></pre></div><p>average() 函数可以求加权平均，加权平均的意思就是每个元素可以设置个权重，默认情况下每个元素的权重是相同的，所以 np.average(a)=(1+2+3+4)/4=2.5，你也可以指定权重数组 wts=[1,2,3,4]，这样加权平均 np.average(a,weights=wts)=(1<em>1+2</em>2+3<em>3+4</em>4)/(1+2+3+4)=3.0。</p> <h5 id="标准差、方差"><a href="#标准差、方差" class="header-anchor">#</a> 标准差、方差</h5> <div class="language-python extra-class"><pre class="language-python"><code>a <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>std<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>var<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+</code></pre></div><p>方差的计算是指每个数值与平均值之差的平方求和的平均值，即 mean((x - x.mean())** 2)。标准差是方差的算术平方根。在数学意义上，代表的是一组数据离平均值的分散程度。所以 np.var(a)=1.25, np.std(a)=1.118033988749895。</p> <h3 id="排序"><a href="#排序" class="header-anchor">#</a> 排序</h3> <div class="language-python extra-class"><pre class="language-python"><code>a <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>a<span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token boolean">None</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>a<span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>  
+<span class="token keyword">print</span> np<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>a<span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>  
+</code></pre></div><p>排序是算法中使用频率最高的一种，也是在数据分析工作中常用的方法，计算机专业的同学会在大学期间的算法课中学习。那么这些排序算法在 NumPy 中实现起来其实非常简单，一条语句就可以搞定。这里你可以使用 sort 函数，sort(a, axis=-1, kind=‘quicksort’, order=None)，默认情况下使用的是快速排序；在 kind 里，可以指定 quicksort、mergesort、heapsort 分别表示快速排序、合并排序、堆排序。同样 axis 默认是 -1，即沿着数组的最后一个轴进行排序，也可以取不同的 axis 轴，或者 axis=None 代表采用扁平化的方式作为一个向量进行排序。另外 order 字段，对于结构化的数组可以指定按照某个字段进行排序。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">11/4/2020, 6:23:30 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/backend/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" class="prev router-link-active">
+        数据分析
+      </a></span> <span class="next"><a href="/backend/数据分析/Pandas.html">
+        Pandas
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.e05bc23e.js" defer></script><script src="/assets/js/2.51b70fa5.js" defer></script><script src="/assets/js/101.c552d83a.js" defer></script>
+  </body>
+</html>
